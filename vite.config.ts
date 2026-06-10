@@ -4,8 +4,12 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/xinanyuan/', 
+  alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   build: {
-    emptyOutDir: true //
-  }
-});
+    outDir: 'dist',
+  },
+  base: '/xinanyuan/',
+})
