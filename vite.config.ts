@@ -12,29 +12,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  server: {
-    watch: {
-      usePolling: false,
-      followSymlinks: false,
-      ignored: [
-        '**/node_modules/**',
-        '**/.git/**',
-        '**/Library/**',
-        '**/Desktop/**',
-        '**/Documents/**',
-        '**/Downloads/**',
-        '**/Movies/**',
-        '**/Music/**',
-        '**/Pictures/**',
-        '**/Public/**',
-        '**/.trae/**',
-        '**/.trae-cn/**',
-        '**/.agents/**',
-        '**/.ai_completion/**',
-        '**/.nvm/**',
-        '**/.npm/**',
-        '**/.cups/**',
-      ],
-    },
-  },
+  base: '/xinanyuan/',
 })
