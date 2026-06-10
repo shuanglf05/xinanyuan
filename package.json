@@ -1,14 +1,12 @@
 {
-  "name": "smart-meeting-system",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+   "name": "your-repo",
+  "homepage": "https://<你的用户名>.github.io/<你的仓库名>/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  }
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,8 +23,8 @@
     "autoprefixer": "^10.4.17",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "postcss": "^8.4.33",
+    “eslint-plugin-react-refresh”: 
+    “postcss”: 
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
